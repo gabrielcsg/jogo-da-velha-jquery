@@ -19,11 +19,11 @@ matriz_jogo['c'][3] = 0;
 
 $(document).ready(function () {
     $('#btn-play').click(function () {
-        if (!$('#input-player-1').val()) {
+        if (!$('#input-player-1').val() || !$('#input-player-1').val().toString().trim()) {
             alert('Informe o apelido do jogador 1');
             return false;
         }
-        if (!$('#input-player-2').val()) {
+        if (!$('#input-player-2').val() || !$('#input-player-2').val().toString().trim()) {
             alert('Informe o apelido do jogador 2');
             return false;
         }
